@@ -13,9 +13,9 @@ jobs:
       - run: docker build -t damlee/react-test -f Dockerfile.dev ./frontend
       - run: docker run -e CI=true damlee/react-test npm test
 
-      - run: docker build -t damlee/docker-frontend ./frontend
       - run: docker build -t damlee/docker-nginx ./nginx
       - run: docker build -t damlee/docker-backend ./backend
+      - run: docker build -t damlee/docker-frontend ./frontend
 
       - run: docker push damlee/docker-frontend
       - run: docker push damlee/docker-nginx
