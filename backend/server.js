@@ -49,6 +49,6 @@ app.post("/api/value", function (req, res, next) {
   );
 });
 
-app.listen(5000, () => {
-  console.log("애플리케이션이 5000번 포트에서 시작되었습니다.");
+app.listen(5010, () => {
+  console.log("애플리케이션이 5010번 포트에서 시작되었습니다.");
 });
